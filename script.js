@@ -67,3 +67,8 @@ const addNewNote = (text = '') => {
         if(notes){notes.forEach((note) => addNewNote(note))};
        
 addButton.addEventListener('click',() => addNewNote() );
+$('#ripple').ripples({
+	resolution: 512,
+	dropRadius: 20,
+	perturbance: 0.04,
+});
